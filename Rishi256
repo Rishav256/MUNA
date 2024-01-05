@@ -1,0 +1,126 @@
+1)
+def datatype(x1):
+  print(x1,'is of type ',type(x1))
+a=10  
+datatype(a)
+b=3.24
+datatype(b)
+c=2+3j
+datatype(c)
+list1=['Messi','Ronaldo','Beckham']
+datatype(list1)
+tuple1=('Rishav',256,9.66)
+datatype(tuple1)
+name="Rishi"
+datatype(name)
+set1={112,443,22,66,99}
+datatype(set1)
+dic={'Nepal': 'Kathmandu', 'Italy': 'Rome', 'England': 'London'}
+datatype(dic)
+
+
+2) #arithmatic operator
+def add(a,b):
+  sum=a+b 
+  print("Sum is:",sum)
+def subtract(a,b):
+  diff=a-b
+  print("The difference is:",diff)
+def multiply(a,b):
+  prod=a*b
+  print("The product is:",prod)
+x=int(input("Enter a number:"))
+y=int(input("Enter a number:"))
+add(x,y)
+subtract(x,y)
+multiply(x,y)
+
+
+3) #area of triangle 
+def area(a,b,c):
+  s=(a+b+c)/2
+  a=(s*(s-a)(s-b)(s-c))**0.5
+  print("The area is: ",a)
+x=int(input("Enter first side of traingle: "))
+y=int(input("Enter first side of traingle: "))
+z=int(input("Enter first side of traingle: "))
+area(x,y,z)
+
+
+4) # Solve the quadratic equation ax**2 + bx + c = 0
+
+# import complex math module
+import cmath
+
+def quad(a,b,c):
+  d = (b**2) - (4*a*c)
+  sol1 = (-b-cmath.sqrt(d))/(2*a)
+  sol2 = (-b+cmath.sqrt(d))/(2*a)
+  print('The solution are {0} and {1}'.format(sol1,sol2))
+x = int(input("Enter a: "))
+y = int(input("Enter b: "))
+z = int(input("Enter c: "))
+quad(x,y,z)
+
+
+5) def swap(a,b):
+  temp=a
+  a=b
+  b=temp
+  print("Value of x now = ",a)
+  print("Value of y now = ",b)
+x=input("Enter x: ")
+y=input("Enter y: ")
+swap(x,y)
+
+
+6) import random
+def random1(a,b):
+  c=random.randint(a,b)
+  print(c)
+x=int(input("Enter the beginning range: "))
+y=int(input("Enter the ending range: "))
+random1(x,y)
+
+
+7) def kmtom(a):
+  miles=a*0.621371
+  print("Miles = ",miles)
+x=int(input("Enter kilometers to convert : "))
+kmtom(x)
+
+
+8) def celtofar(a):
+  f=(a*(9/5))+32
+  print("The farenheit equivalent is : ",f)
+x=int(input("Enter temp in Calcius : "))
+celtofar(x)
+
+
+9) import calendar
+def cal(a,b):
+  print(calendar.month(a,b))
+yy = int(input("Enter year: "))
+mm = int(input("Enter month: "))
+cal(yy,mm)
+
+
+10) def check(a):
+  if(a==0):
+    print("The number is zero.")
+  elif (a<0):
+    print("The number is negative. ")
+  else:
+    print("The number is positive")
+x=int(input("Enter a number to check: "))
+check(x)
+
+
+11) def oddeven(a):
+  if(a%2==0):
+    print("Even")
+  else:
+    print("Odd")
+
+x=int(input("Enter a number:"))
+oddeven(x)
